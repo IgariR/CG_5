@@ -10,6 +10,7 @@
 </head>
 <body>
 <script>
+  
   var init = function() {
 // レンダラーを作成
 var renderer = new THREE.WebGLRenderer();
@@ -20,7 +21,7 @@ document.body.appendChild(renderer.domElement);
 // シーンを作成
 var scene = new THREE.Scene();
 // カメラを作成
-var camera = new THREE.PerspectiveCamera(90, 800 / 600, 1, 1000);
+var camera = new THREE.PerspectiveCamera(45, 800 / 600, 1, 1000);
 // 平行光源を生成
 var light = new THREE.DirectionalLight(0xffffff);
 light.position.set(1, 1, 1);
